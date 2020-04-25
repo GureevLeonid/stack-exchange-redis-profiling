@@ -7,9 +7,9 @@ Simple stack exchange redis profiling implementation.
 Register in DI
 
 ```
-    services.AddSingleton<IRedisConnectionPool, SingleRedisConnectionPool>();
-    services.AddSingleton<IRedisProfiler, AsyncLocalRedisProfiler>();
-    services.AddSingleton<IRedisProfilingMetrics, PrometheusRedisProfilingMetrics>();
+services.AddSingleton<IRedisConnectionPool, SingleRedisConnectionPool>();
+services.AddSingleton<IRedisProfiler, AsyncLocalRedisProfiler>();
+services.AddSingleton<IRedisProfilingMetrics, PrometheusRedisProfilingMetrics>();
 ```
 
 Inject IRedisProfiler
